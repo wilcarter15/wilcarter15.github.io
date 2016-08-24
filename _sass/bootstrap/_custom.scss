@@ -1,0 +1,283 @@
+/*ALL DEVICES*/
+body{
+    margin-top: 70px;
+    
+}
+.sponsors{
+    h1{margin-top: -20px;}
+    .divide{
+        border: 3px solid #2c7eb6;
+    }
+}
+.acesBackground{
+    
+    @media screen and (min-width: 768px){
+    background: url('../images/AcesAthleticsWatermarkBG.png') no-repeat center center fixed;
+     -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: cover;
+    -o-background-size: 100%;
+    }
+}
+.sponsorBackground{
+    background-color: rgb(255,255,255);
+}
+.navLogo{
+    width: 100%;
+}
+
+.marginBottom{
+
+    margin-bottom: auto;
+    
+    @media screen and (min-width: 768px){
+        margin-bottom: -100px;
+    }
+}
+/*Home Page Hero Video CSS
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.imgVideo-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+End Hero Video CSS*/
+
+/*APPLY TO ALL*/
+/*.descriptionBox,
+.switch:hover>.titleBox{
+    display:none;
+}
+.switch:hover>.descriptionBox{
+    display: block;
+}*/
+
+.titleBox,
+.descriptionBox{
+    border: 1px solid rgb(255,255,255);
+    background-color: rgba(128,128,128,.3);
+    margin: 40px 30px 0px 30px;
+    
+}
+.sectionSpace{
+  
+        margin-top: 100px;
+        margin-bottom: 100px;
+}
+footer{
+    border-top: 1px solid #2c7eb6;
+}
+.hero{
+    background: url(../images/Jumbotron.jpg) no-repeat center top;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: cover;
+    -o-background-size: 100%;
+    height: 300px;
+    
+    @media screen and (min-width: 768px){
+        background: url(../images/Jumbotron.jpg) no-repeat center top;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size: cover;
+        -o-background-size: 100%;
+        height: 600px;
+    }
+}
+.clubBackground{
+    background: url('../images/HomeClub2.jpg') no-repeat center left;
+        
+        @media screen and (min-width : 768px){
+           
+        }
+}
+.beachBackground{
+    background: url('../images/sandBackground.jpg') no-repeat center center;
+        
+        @media screen and (min-width : 768px){
+          
+        }
+    
+}
+.alumniBackground{
+    background: url('../images/acesAlumni.jpg') no-repeat center center;
+
+        @media screen and (min-width : 768px){
+
+        }
+}
+.peakPerformanceBackground{
+    background: url('../images/PeakPerformance.jpg') no-repeat center top;
+    
+    
+    .titleBox{
+        margin-top: 15px;
+    }
+    @media screen and (min-width : 768px){
+
+    }
+}
+.weightRoomBackground{
+    background: url('../images/weightRoom.jpg') no-repeat center top;
+    
+    .titleBox{
+        margin-top: 15px;
+    }
+    
+    @media screen and (min-width : 768px){
+      
+    }
+}
+.clubBackground,
+.beachBackground,
+.alumniBackground,
+.peakPerformanceBackground,
+.weightRoomBackground{
+    height: 250px;
+     -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: cover;
+    -o-background-size: 100%;
+    padding-top: 50px;
+    
+    h1{
+        font-size: 30px;
+        color: #ffffff;
+    }
+      .descriptionBox,
+        :hover>.titleBox{
+            display:none;
+        }
+        :hover>.descriptionBox{
+            display: block;
+        }
+   
+    @media screen and (min-width : 768px){
+    -webkit-box-shadow: 0px 20px 10px -10px #888888;
+    -moz-box-shadow: 0px 25px 10px -10px #888888;
+    -o-box-shadow: 0px 25px 10px -10px #888888;
+    box-shadow: 0px 25px 10px -10px #888888;
+    height: 300px;
+    margin: 15px;
+       
+        h1{
+            font-size: 30px;
+            color: #ffffff;
+        }
+        
+
+    }
+    @media screen and (min-width : 992px) {
+        h1{
+            font-size: 55px;
+            color: #ffffff;
+        }
+    }
+        
+}
+.clubBackground:hover,
+.beachBackground:hover,
+.alumniBackground:hover,
+.peakPerformanceBackground:hover,
+.weightRoomBackground:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    position: relative;
+   
+    @media screen and (min-width : 768px){
+         -webkit-box-shadow: 0px 20px 10px -10px #888888;
+    -moz-box-shadow: 0px 22px 15px -15px #888888;
+    -o-box-shadow: 0px 22px 15px -15px #888888;
+    box-shadow: 0px 22px 15px -15px #888888;
+    z-index: 5;
+    }
+}
+
+/*End Home Page VB feature*/
+
+
+
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media screen and (min-width : 320px) {
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (min-width : 768px) {
+}
+   
+
+/* Medium Devices, Desktops */
+@media screen and (min-width : 992px) {
+  
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (min-width : 1200px) {
+    
+}
+
