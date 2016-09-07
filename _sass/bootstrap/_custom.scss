@@ -53,28 +53,6 @@ img{
                 height: 550px;
             }
     }
-    
-    .best-of-state{
-       background: url(../images/AcesBuilding.jpg) no-repeat center bottom;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        height: 300px;
-        margin-right: -15px;
-        margin-left: -15px;
-        border-top: 5px solid #2c7eb6;
-        border-bottom: 5px solid #2c7eb6;
-
-            @media screen and (min-width: 768px){
-                background: url(../images/AcesBuilding.jpg) no-repeat center bottom;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size: cover;
-                -o-background-size: cover;
-                height: 650px;
-            }
-    }
 
     .volleyball,
     .training{
