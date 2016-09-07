@@ -2,26 +2,198 @@
 body{
     margin-top: 70px;
     
+        @media screen and (min-width: 768px){
+        background: url('../images/AcesAthleticsWatermarkBG.png') no-repeat center center fixed;
+         -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;    
+        }
 }
+
+footer{
+     p{
+            color: #ffffff;
+        }
+    >div{
+        background: #2c7eb6;
+        
+       padding-top: 10px;
+        >div{
+            >p:nth-of-type(1){
+            text-decoration: underline;
+            }
+        }
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.home-page{
+    
+    .hero{
+        background: url(../images/Jumbotron.jpg) no-repeat center top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 300px;
+        margin-right: -15px;
+        margin-left: -15px;
+
+            @media screen and (min-width: 768px){
+                background: url(../images/Jumbotron.jpg) no-repeat center top;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+                height: 600px;
+            }
+    }
+
+    .volleyball,
+    .training{
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        h1{
+            font-size: 30px;
+            color: #ffffff;
+            
+                @media screen and (min-width : 992px) {    
+                    font-size: 55px;  
+            }
+         }
+//for hover and switch text effect//
+        .descriptionBox,
+        :hover>.titleBox{
+                    display:none;
+            }
+        :hover>.descriptionBox{
+                    display: block;
+            }
+        }
+    
+    
+    .volleyball{   
+       
+            .club-background{
+            
+                    background: url('../images/HomeClub2.jpg') no-repeat center left;
+                
+            }
+            .beach-background{
+               
+                    background: url('../images/sandBackground.jpg') no-repeat center center;
+                
+            }
+            .alumni-background{
+                
+                    background: url('../images/acesAlumni.jpg') no-repeat center center;
+                
+            }
+            
+            .club-background,
+            .beach-background,
+            .alumni-background,{
+                
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             background-size: cover;
+             -o-background-size: cover;
+             padding-top: 50px;
+            height: 250px;
+            
+            
+                @media screen and (min-width : 768px){
+                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                    -moz-box-shadow: 0px 25px 10px -10px #888888;
+                    -o-box-shadow: 0px 25px 10px -10px #888888;
+                    box-shadow: 0px 25px 10px -10px #888888;
+                    height: 300px;
+                    margin: 15px;
+                }
+            
+                &:hover{
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    position: relative;
+
+                        @media screen and (min-width : 768px){
+                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                        -moz-box-shadow: 0px 22px 15px -15px #888888;
+                        -o-box-shadow: 0px 22px 15px -15px #888888;
+                        box-shadow: 0px 22px 15px -15px #888888;
+                        z-index: 5;
+                        }
+                }     
+            }   
+        
+    }
+    
+    .training{
+    
+            .peak-performance-background{
+                
+                    background: url('../images/PeakPerformance.jpg') no-repeat center top;
+                   
+                }
+            .weight-room-background{
+          
+                    background: url('../images/weightRoom.jpg') no-repeat center top;
+                }
+        
+            .peak-performance-background,
+            .weight-room-background{
+                 -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 background-size: cover;
+                 -o-background-size: cover;
+                 padding-top: 50px;
+                height: 250px;
+                
+                @media screen and (min-width : 768px){
+                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                    -moz-box-shadow: 0px 25px 10px -10px #888888;
+                    -o-box-shadow: 0px 25px 10px -10px #888888;
+                    box-shadow: 0px 25px 10px -10px #888888;
+                    height: 300px;
+                    margin: 15px;
+                }
+            
+                &:hover{
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    position: relative;
+
+                        @media screen and (min-width : 768px){
+                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                        -moz-box-shadow: 0px 22px 15px -15px #888888;
+                        -o-box-shadow: 0px 22px 15px -15px #888888;
+                        box-shadow: 0px 22px 15px -15px #888888;
+                        z-index: 5;
+                        }
+                }     
+            }
+            
+            
+        }
+
+    }
+    
+
 .sponsors{
+    margin-top: 50px;
     h1{margin-top: -20px;}
     .divide{
         border: 3px solid #2c7eb6;
     }
 }
-.acesBackground{
-    
-    @media screen and (min-width: 768px){
-    background: url('../images/AcesAthleticsWatermarkBG.png') no-repeat center center fixed;
-     -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: cover;
-    -o-background-size: 100%;
-    }
-}
-.sponsorBackground{
-    background-color: rgb(255,255,255);
-}
+
+
 .navLogo{
     width: 100%;
 }
@@ -119,139 +291,9 @@ End Hero Video CSS*/
     margin: 40px 30px 0px 30px;
     
 }
-.sectionSpace{
-  
-        margin-top: 100px;
-        margin-bottom: 100px;
-}
-footer{
-    border-top: 1px solid #2c7eb6;
-}
-.hero{
-    background: url(../images/Jumbotron.jpg) no-repeat center top;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: cover;
-    -o-background-size: 100%;
-    height: 300px;
-    
-    @media screen and (min-width: 768px){
-        background: url(../images/Jumbotron.jpg) no-repeat center top;
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        background-size: cover;
-        -o-background-size: 100%;
-        height: 600px;
-    }
-}
-.clubBackground{
-    background: url('../images/HomeClub2.jpg') no-repeat center left;
-        
-        @media screen and (min-width : 768px){
-           
-        }
-}
-.beachBackground{
-    background: url('../images/sandBackground.jpg') no-repeat center center;
-        
-        @media screen and (min-width : 768px){
-          
-        }
-    
-}
-.alumniBackground{
-    background: url('../images/acesAlumni.jpg') no-repeat center center;
 
-        @media screen and (min-width : 768px){
 
-        }
-}
-.peakPerformanceBackground{
-    background: url('../images/PeakPerformance.jpg') no-repeat center top;
-    
-    
-    .titleBox{
-        margin-top: 15px;
-    }
-    @media screen and (min-width : 768px){
 
-    }
-}
-.weightRoomBackground{
-    background: url('../images/weightRoom.jpg') no-repeat center top;
-    
-    .titleBox{
-        margin-top: 15px;
-    }
-    
-    @media screen and (min-width : 768px){
-      
-    }
-}
-.clubBackground,
-.beachBackground,
-.alumniBackground,
-.peakPerformanceBackground,
-.weightRoomBackground{
-    height: 250px;
-     -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: cover;
-    -o-background-size: 100%;
-    padding-top: 50px;
-    
-    h1{
-        font-size: 30px;
-        color: #ffffff;
-    }
-      .descriptionBox,
-        :hover>.titleBox{
-            display:none;
-        }
-        :hover>.descriptionBox{
-            display: block;
-        }
-   
-    @media screen and (min-width : 768px){
-    -webkit-box-shadow: 0px 20px 10px -10px #888888;
-    -moz-box-shadow: 0px 25px 10px -10px #888888;
-    -o-box-shadow: 0px 25px 10px -10px #888888;
-    box-shadow: 0px 25px 10px -10px #888888;
-    height: 300px;
-    margin: 15px;
-       
-        h1{
-            font-size: 30px;
-            color: #ffffff;
-        }
-        
-
-    }
-    @media screen and (min-width : 992px) {
-        h1{
-            font-size: 55px;
-            color: #ffffff;
-        }
-    }
-        
-}
-.clubBackground:hover,
-.beachBackground:hover,
-.alumniBackground:hover,
-.peakPerformanceBackground:hover,
-.weightRoomBackground:hover{
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    position: relative;
-   
-    @media screen and (min-width : 768px){
-         -webkit-box-shadow: 0px 20px 10px -10px #888888;
-    -moz-box-shadow: 0px 22px 15px -15px #888888;
-    -o-box-shadow: 0px 22px 15px -15px #888888;
-    box-shadow: 0px 22px 15px -15px #888888;
-    z-index: 5;
-    }
-}
 
 /*End Home Page VB feature*/
 

@@ -5814,22 +5814,146 @@ button.close {
 /*ALL DEVICES*/
 body {
   margin-top: 70px; }
+  @media screen and (min-width: 768px) {
+    body {
+      background: url("../images/AcesAthleticsWatermarkBG.png") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover; } }
 
-.sponsors h1 {
-  margin-top: -20px; }
-.sponsors .divide {
-  border: 3px solid #2c7eb6; }
+footer p {
+  color: #ffffff; }
+footer > div {
+  background: #2c7eb6;
+  padding-top: 10px; }
+  footer > div > div > p:nth-of-type(1) {
+    text-decoration: underline; }
 
-@media screen and (min-width: 768px) {
-  .acesBackground {
-    background: url("../images/AcesAthleticsWatermarkBG.png") no-repeat center center fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: cover;
-    -o-background-size: 100%; } }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto; }
 
-.sponsorBackground {
-  background-color: white; }
+.home-page .hero {
+  background: url(../images/Jumbotron.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 300px;
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media screen and (min-width: 768px) {
+    .home-page .hero {
+      background: url(../images/Jumbotron.jpg) no-repeat center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      height: 600px; } }
+.home-page .volleyball,
+.home-page .training {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .home-page .volleyball h1,
+  .home-page .training h1 {
+    font-size: 30px;
+    color: #ffffff; }
+    @media screen and (min-width: 992px) {
+      .home-page .volleyball h1,
+      .home-page .training h1 {
+        font-size: 55px; } }
+  .home-page .volleyball .descriptionBox,
+  .home-page .volleyball :hover > .titleBox,
+  .home-page .training .descriptionBox,
+  .home-page .training :hover > .titleBox {
+    display: none; }
+  .home-page .volleyball :hover > .descriptionBox,
+  .home-page .training :hover > .descriptionBox {
+    display: block; }
+.home-page .volleyball .club-background {
+  background: url("../images/HomeClub2.jpg") no-repeat center left; }
+.home-page .volleyball .beach-background {
+  background: url("../images/sandBackground.jpg") no-repeat center center; }
+.home-page .volleyball .alumni-background {
+  background: url("../images/acesAlumni.jpg") no-repeat center center; }
+.home-page .volleyball .club-background,
+.home-page .volleyball .beach-background,
+.home-page .volleyball .alumni-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 50px;
+  height: 250px; }
+  @media screen and (min-width: 768px) {
+    .home-page .volleyball .club-background,
+    .home-page .volleyball .beach-background,
+    .home-page .volleyball .alumni-background {
+      -webkit-box-shadow: 0px 20px 10px -10px #888888;
+      -moz-box-shadow: 0px 25px 10px -10px #888888;
+      -o-box-shadow: 0px 25px 10px -10px #888888;
+      box-shadow: 0px 25px 10px -10px #888888;
+      height: 300px;
+      margin: 15px; } }
+  .home-page .volleyball .club-background:hover,
+  .home-page .volleyball .beach-background:hover,
+  .home-page .volleyball .alumni-background:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .home-page .volleyball .club-background:hover,
+      .home-page .volleyball .beach-background:hover,
+      .home-page .volleyball .alumni-background:hover {
+        -webkit-box-shadow: 0px 20px 10px -10px #888888;
+        -moz-box-shadow: 0px 22px 15px -15px #888888;
+        -o-box-shadow: 0px 22px 15px -15px #888888;
+        box-shadow: 0px 22px 15px -15px #888888;
+        z-index: 5; } }
+.home-page .training .peak-performance-background {
+  background: url("../images/PeakPerformance.jpg") no-repeat center top; }
+.home-page .training .weight-room-background {
+  background: url("../images/weightRoom.jpg") no-repeat center top; }
+.home-page .training .peak-performance-background,
+.home-page .training .weight-room-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 50px;
+  height: 250px; }
+  @media screen and (min-width: 768px) {
+    .home-page .training .peak-performance-background,
+    .home-page .training .weight-room-background {
+      -webkit-box-shadow: 0px 20px 10px -10px #888888;
+      -moz-box-shadow: 0px 25px 10px -10px #888888;
+      -o-box-shadow: 0px 25px 10px -10px #888888;
+      box-shadow: 0px 25px 10px -10px #888888;
+      height: 300px;
+      margin: 15px; } }
+  .home-page .training .peak-performance-background:hover,
+  .home-page .training .weight-room-background:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .home-page .training .peak-performance-background:hover,
+      .home-page .training .weight-room-background:hover {
+        -webkit-box-shadow: 0px 20px 10px -10px #888888;
+        -moz-box-shadow: 0px 22px 15px -15px #888888;
+        -o-box-shadow: 0px 22px 15px -15px #888888;
+        box-shadow: 0px 22px 15px -15px #888888;
+        z-index: 5; } }
+
+.sponsors {
+  margin-top: 50px; }
+  .sponsors h1 {
+    margin-top: -20px; }
+  .sponsors .divide {
+    border: 3px solid #2c7eb6; }
 
 .navLogo {
   width: 100%; }
@@ -5921,131 +6045,6 @@ End Hero Video CSS*/
   border: 1px solid white;
   background-color: rgba(128, 128, 128, 0.3);
   margin: 40px 30px 0px 30px; }
-
-.sectionSpace {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-footer {
-  border-top: 1px solid #2c7eb6; }
-
-.hero {
-  background: url(../images/Jumbotron.jpg) no-repeat center top;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: cover;
-  -o-background-size: 100%;
-  height: 300px; }
-  @media screen and (min-width: 768px) {
-    .hero {
-      background: url(../images/Jumbotron.jpg) no-repeat center top;
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: cover;
-      -o-background-size: 100%;
-      height: 600px; } }
-
-.clubBackground {
-  background: url("../images/HomeClub2.jpg") no-repeat center left; }
-
-.beachBackground {
-  background: url("../images/sandBackground.jpg") no-repeat center center; }
-
-.alumniBackground {
-  background: url("../images/acesAlumni.jpg") no-repeat center center; }
-
-.peakPerformanceBackground {
-  background: url("../images/PeakPerformance.jpg") no-repeat center top; }
-  .peakPerformanceBackground .titleBox {
-    margin-top: 15px; }
-
-.weightRoomBackground {
-  background: url("../images/weightRoom.jpg") no-repeat center top; }
-  .weightRoomBackground .titleBox {
-    margin-top: 15px; }
-
-.clubBackground,
-.beachBackground,
-.alumniBackground,
-.peakPerformanceBackground,
-.weightRoomBackground {
-  height: 250px;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: cover;
-  -o-background-size: 100%;
-  padding-top: 50px; }
-  .clubBackground h1,
-  .beachBackground h1,
-  .alumniBackground h1,
-  .peakPerformanceBackground h1,
-  .weightRoomBackground h1 {
-    font-size: 30px;
-    color: #ffffff; }
-  .clubBackground .descriptionBox,
-  .clubBackground :hover > .titleBox,
-  .beachBackground .descriptionBox,
-  .beachBackground :hover > .titleBox,
-  .alumniBackground .descriptionBox,
-  .alumniBackground :hover > .titleBox,
-  .peakPerformanceBackground .descriptionBox,
-  .peakPerformanceBackground :hover > .titleBox,
-  .weightRoomBackground .descriptionBox,
-  .weightRoomBackground :hover > .titleBox {
-    display: none; }
-  .clubBackground :hover > .descriptionBox,
-  .beachBackground :hover > .descriptionBox,
-  .alumniBackground :hover > .descriptionBox,
-  .peakPerformanceBackground :hover > .descriptionBox,
-  .weightRoomBackground :hover > .descriptionBox {
-    display: block; }
-  @media screen and (min-width: 768px) {
-    .clubBackground,
-    .beachBackground,
-    .alumniBackground,
-    .peakPerformanceBackground,
-    .weightRoomBackground {
-      -webkit-box-shadow: 0px 20px 10px -10px #888888;
-      -moz-box-shadow: 0px 25px 10px -10px #888888;
-      -o-box-shadow: 0px 25px 10px -10px #888888;
-      box-shadow: 0px 25px 10px -10px #888888;
-      height: 300px;
-      margin: 15px; }
-      .clubBackground h1,
-      .beachBackground h1,
-      .alumniBackground h1,
-      .peakPerformanceBackground h1,
-      .weightRoomBackground h1 {
-        font-size: 30px;
-        color: #ffffff; } }
-  @media screen and (min-width: 992px) {
-    .clubBackground h1,
-    .beachBackground h1,
-    .alumniBackground h1,
-    .peakPerformanceBackground h1,
-    .weightRoomBackground h1 {
-      font-size: 55px;
-      color: #ffffff; } }
-
-.clubBackground:hover,
-.beachBackground:hover,
-.alumniBackground:hover,
-.peakPerformanceBackground:hover,
-.weightRoomBackground:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  position: relative; }
-  @media screen and (min-width: 768px) {
-    .clubBackground:hover,
-    .beachBackground:hover,
-    .alumniBackground:hover,
-    .peakPerformanceBackground:hover,
-    .weightRoomBackground:hover {
-      -webkit-box-shadow: 0px 20px 10px -10px #888888;
-      -moz-box-shadow: 0px 22px 15px -15px #888888;
-      -o-box-shadow: 0px 22px 15px -15px #888888;
-      box-shadow: 0px 22px 15px -15px #888888;
-      z-index: 5; } }
 
 /*End Home Page VB feature*/
 /* Custom, iPhone Retina */
