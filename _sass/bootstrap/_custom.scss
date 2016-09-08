@@ -53,11 +53,15 @@ img{
                 height: 550px;
             }
     }
+    .titleBox,
+    .descriptionBox{
+        border: 1px solid rgb(255,255,255);
+        background-color: rgba(128,128,128,.3);
+        margin: 40px 30px 0px 30px;
 
+    }
     .volleyball,
     .training{
-        margin-top: 100px;
-        margin-bottom: 100px;
 
         h1{
             font-size: 30px;
@@ -68,19 +72,70 @@ img{
             }
          }
 //for hover and switch text effect//
-        .descriptionBox,
+        .descriptionBox{
+            display: none;
+        }
         :hover>.titleBox{
                     display:none;
             }
         :hover>.descriptionBox{
                     display: block;
             }
-        }
+    }
     
     
     .volleyball{   
-       
+            margin-top: 100px;
+        
             .club-background{
+                background: url('../images/HomeClub2.jpg') no-repeat center left;
+            }
+            .beach-background{
+                 background: url('../images/sandBackground.jpg') no-repeat center center;
+            }
+            .alumni-background{
+                background: url('../images/acesAlumni.jpg') no-repeat center center;
+            }
+            .club-background,
+            .beach-background,
+            .alumni-background{
+                -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 background-size: cover;
+                 -o-background-size: cover;
+                 padding-top: 50px;
+                height: 250px;
+                margin: 0px;
+                
+                @media screen and (min-width : 768px){
+                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                    -moz-box-shadow: 0px 25px 10px -10px #888888;
+                    -o-box-shadow: 0px 25px 10px -10px #888888;
+                    box-shadow: 0px 25px 10px -10px #888888;
+                    height: 300px;
+                    margin: 0px -5px 15px -5px;
+                    
+                }
+                
+                &:hover{
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    position: relative;
+                    z-index: 10;
+
+                        @media screen and (min-width : 768px){
+                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                        -moz-box-shadow: 0px 22px 15px -15px #888888;
+                        -o-box-shadow: 0px 22px 15px -15px #888888;
+                        box-shadow: 0px 22px 15px -15px #888888;
+                        z-index: 5;
+                        }
+                }     
+            }
+        
+        
+       
+            /*.club-background{
             
                     background: url('../images/HomeClub2.jpg') no-repeat center left;
                 
@@ -130,13 +185,54 @@ img{
                         z-index: 5;
                         }
                 }     
-            }   
+            }*/   
         
     }
     
     .training{
-    
+  
             .peak-performance-background{
+                background: url('../images/PeakPerformance.jpg') no-repeat center top;
+            }
+            .weight-room-background{
+                 background: url('../images/weightRoom.jpg') no-repeat center top;
+            }
+            
+            .peak-performance-background,
+            .weight-room-background{
+                -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 background-size: cover;
+                 -o-background-size: cover;
+                 padding-top: 50px;
+                height: 250px;
+                margin: 0px;
+                
+                @media screen and (min-width : 768px){
+                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                    -moz-box-shadow: 0px 25px 10px -10px #888888;
+                    -o-box-shadow: 0px 25px 10px -10px #888888;
+                    box-shadow: 0px 25px 10px -10px #888888;
+                    height: 300px;
+                    margin: 0px -5px 15px -5px;
+                }
+                
+                &:hover{
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    position: relative;
+
+                        @media screen and (min-width : 768px){
+                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
+                        -moz-box-shadow: 0px 22px 15px -15px #888888;
+                        -o-box-shadow: 0px 22px 15px -15px #888888;
+                        box-shadow: 0px 22px 15px -15px #888888;
+                        z-index: 5;
+                        }
+                }     
+            }
+
+            /*.peak-performance-background{
                 
                     background: url('../images/PeakPerformance.jpg') no-repeat center top;
                    
@@ -177,13 +273,12 @@ img{
                         z-index: 5;
                         }
                 }     
-            }
+            }*/
             
             
         }
 
     .news{
-        background: #ffffff;
         padding-top: 50px;
         padding-bottom: 80px;
         margin-top: 50px;
@@ -229,39 +324,30 @@ img{
             }
         }
     }
-}
+    
+    .sponsors{
     
 
-.sponsors{
-    background: #ffffff;
-    h1{
-        margin-top: 50px;
-        @media screen and(min-width:768px){
-        margin-top: -20px;
+        h1{
+            @media screen and(min-width:768px){
+              
+            }
+
         }
+        .divide{
+            border: 1px solid #2c7eb6;
+            margin-top: 40px;
+        }
+    }
+
+}
     
-    }
-    .divide{
-        border: 3px solid #2c7eb6;
-    }
-}
-.sponsor-logos{
-    background: #ffffff;
-}
 
 
-.navLogo{
-    width: 100%;
-}
 
-.marginBottom{
 
-    margin-bottom: auto;
-    
-    @media screen and (min-width: 768px){
-        margin-bottom: -100px;
-    }
-}
+
+
 /*Home Page Hero Video CSS
 .homepage-hero-module {
   border-right: none;
@@ -340,13 +426,7 @@ End Hero Video CSS*/
     display: block;
 }*/
 
-.titleBox,
-.descriptionBox{
-    border: 1px solid rgb(255,255,255);
-    background-color: rgba(128,128,128,.3);
-    margin: 40px 30px 0px 30px;
-    
-}
+
 
 
 
