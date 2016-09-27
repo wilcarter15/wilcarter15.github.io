@@ -371,7 +371,8 @@ footer{
     }
 
     .players-section{
-          
+        
+        
         hr{
             max-width: 200px;
         }
@@ -388,10 +389,10 @@ footer{
          //flip effect  
             #f1_container {
               width: 100px;
-              height: 150px;
+              height: 125px;
               z-index: 1;
                  @media screen and (min-width: 768px){
-                        width: 150px;
+                        width: 140px;
                         height: 200px;
                     }
             }
@@ -426,12 +427,12 @@ footer{
                 div{
 
                     width: 100px;
-                    height: 150px;
                     margin: auto;
 
+
                             @media screen and (min-width: 768px){
-                                width: 150px;
-                                height: 200px;
+                                width: 140px;
+                                
                             }
 
                         hr{

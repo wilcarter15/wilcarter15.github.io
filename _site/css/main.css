@@ -6190,11 +6190,11 @@ footer {
     color: #ff0000; }
 .home-page .players-section #f1_container {
   width: 100px;
-  height: 150px;
+  height: 125px;
   z-index: 1; }
   @media screen and (min-width: 768px) {
     .home-page .players-section #f1_container {
-      width: 150px;
+      width: 140px;
       height: 200px; } }
 .home-page .players-section #f1_container {
   perspective: 1000; }
@@ -6218,12 +6218,10 @@ footer {
   text-align: center; }
 .home-page .players-section div:nth-of-type(1) > div div {
   width: 100px;
-  height: 150px;
   margin: auto; }
   @media screen and (min-width: 768px) {
     .home-page .players-section div:nth-of-type(1) > div div {
-      width: 150px;
-      height: 200px; } }
+      width: 140px; } }
   .home-page .players-section div:nth-of-type(1) > div div hr {
     max-width: 100px;
     margin-top: -5px;
