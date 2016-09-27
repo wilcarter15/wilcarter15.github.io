@@ -1,0 +1,17 @@
+Quick Reference for all changes to the Bootstrap SCSS files.  Everything noted below follows this format... discription - file.scss /.css
+
+Navigation Bar:
+    Colapsed navbar
+        "LACE EM UP BASKETBALL" on the collapsed navbar -  _navbar.scss/.navbar-brand
+        
+        Mobile navbar dropdown icon - _navbar.scss/.navbar-defalut .navbar-toggle
+        
+    Desktop/Both
+        Change navbar background color - _navbar.scss/.navbar-default
+        
+        Change navbar links color & hover/focus color & font styles - _navbar.scss/.navbar-default  .navbar-nav
+        
+        Social Media icon links from Font Awesome (font awesome flies in 'fonts' folder)  styled - _navbar.scss/.navbar-default .navbar-nav 
+        
+        Footer css is found in _custom.scss/footer
+    

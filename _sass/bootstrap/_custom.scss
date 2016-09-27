@@ -1,461 +1,911 @@
-/*ALL DEVICES*/
-body{
-    margin-top: 70px;
+//READ 'STYLE GUIDE' under _sass>bootstrap for details on how the bootstrap Navbar was styled//
+
+//Look for notes throughout this stylesheet.  Styles are organized by the pages & sections they corrispond to on the site//
+
+//---------------------------------------------------------------------------------------------------------------------------//
+
+
+//General styles for the entier site//
+p{
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000000;
+}
+a{color: #ff0000;
+        
+    &:hover{
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    &:focus{
+        color: #ff0000;
+    }
+} 
+
+.title{
     
-        @media screen and (min-width: 768px){
-        background: url('../images/AcesAthleticsWatermarkBG.png') no-repeat center center fixed;
-         -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;    
+        img{
+            margin-top: 110px;
+            margin-bottom: 70px;
+            padding-bottom: 10px; 
+
+                @media screen and(min-width: 768px){
+                    margin-top: 160px;
+                    margin-bottom: 70px;
+                    padding-bottom: 10px; 
+                }
         }
 }
 
-footer{
-     p{
-            color: #ffffff;
-        }
-    >div{
-        background: #2c7eb6;
-        
-       padding-top: 10px;
-        >div{
-            >p:nth-of-type(1){
-            text-decoration: underline;
-            }
-        }
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue","Josefin Slab",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
 }
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
     margin: auto;
 }
-.home-page{
-    
-    .hero{
-        background: url(../images/Jumbotron.jpg) no-repeat center top;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        height: 300px;
-        margin-right: -15px;
-        margin-left: -15px;
-
-            @media screen and (min-width: 768px){
-                background: url(../images/Jumbotron.jpg) no-repeat center top;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size: cover;
-                -o-background-size: cover;
-                height: 550px;
-            }
-    }
-    .titleBox,
-    .descriptionBox{
-        border: 1px solid rgb(255,255,255);
-        background-color: rgba(128,128,128,.3);
-        margin: 40px 30px 0px 30px;
-
-    }
-    .volleyball,
-    .training{
-
-        h1{
-            font-size: 30px;
-            color: #ffffff;
-            
-                @media screen and (min-width : 992px) {    
-                    font-size: 55px;  
-            }
-         }
-//for hover and switch text effect//
-        .descriptionBox{
-            display: none;
-        }
-        :hover>.titleBox{
-                    display:none;
-            }
-        :hover>.descriptionBox{
-                    display: block;
-            }
-    }
-    
-    
-    .volleyball{   
-            margin-top: 100px;
+.background{
+    background: url('../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg') no-repeat center top fixed;
+    -webkit-background-size: 160%;
+    -moz-background-size: 160%;
+    background-size:160%;
+    -o-background-size: 160%; 
+    height: 400px;     
+}
+.about_calendar_contact-background{
+        background: url('../img/BackgroundImg/Original%20Ball%20and%20Shoes.jpg') no-repeat center top fixed;
+        -webkit-background-size: 160%;
+        -moz-background-size: 160%;
+        background-size: 160%;
+        -o-background-size: 160%; 
+        height: 400px;
         
-            .club-background{
-                background: url('../images/HomeClub2.jpg') no-repeat center left;
-            }
-            .beach-background{
-                 background: url('../images/sandBackground.jpg') no-repeat center center;
-            }
-            .alumni-background{
-                background: url('../images/acesAlumni.jpg') no-repeat center center;
-            }
-            .club-background,
-            .beach-background,
-            .alumni-background{
-                -webkit-background-size: cover;
-                 -moz-background-size: cover;
-                 background-size: cover;
-                 -o-background-size: cover;
-                 padding-top: 50px;
-                height: 250px;
-                margin: 0px;
-                
-                @media screen and (min-width : 768px){
-                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                    -moz-box-shadow: 0px 25px 10px -10px #888888;
-                    -o-box-shadow: 0px 25px 10px -10px #888888;
-                    box-shadow: 0px 25px 10px -10px #888888;
-                    height: 300px;
-                    margin: 0px -5px 15px -5px;
-                    
-                }
-                
-                &:hover{
-                    -webkit-transform: scale(1.05);
-                    -moz-transform: scale(1.05);
-                    position: relative;
-                    z-index: 10;
-
-                        @media screen and (min-width : 768px){
-                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                        -moz-box-shadow: 0px 22px 15px -15px #888888;
-                        -o-box-shadow: 0px 22px 15px -15px #888888;
-                        box-shadow: 0px 22px 15px -15px #888888;
-                        z-index: 5;
-                        }
-                }     
-            }
-        
-        
+}
+.events-background{
+         background: url('../img/BackgroundImg/campbackground3.jpg') no-repeat center top fixed;
+        -webkit-background-size: 160%;
+        -moz-background-size: 160%;
+        background-size: 110%;
+        -o-background-size: 160%; 
        
-            /*.club-background{
+    
+}
+.players-background{
+        background: url('../img/BackgroundImg/Original%20feet%20and%20ball.jpg') no-repeat center top fixed;
+        -webkit-background-size: 300%;
+        -moz-background-size: 300%;
+        background-size: 300%;
+        -o-background-size: 300%;
             
-                    background: url('../images/HomeClub2.jpg') no-repeat center left;
-                
+            @media screen and(min-width:500px){
+                -webkit-background-size: 300%;
+                -moz-background-size: 300%;
+                background-size: 250%;
+                -o-background-size: 300%;
             }
-            .beach-background{
-               
-                    background: url('../images/sandBackground.jpg') no-repeat center center;
-                
+            @media screen and(min-width:600px){
+                -webkit-background-size: 300%;
+                -moz-background-size: 300%;
+                background-size: 200%;
+                -o-background-size: 300%;
             }
-            .alumni-background{
-                
-                    background: url('../images/acesAlumni.jpg') no-repeat center center;
-                
-            }
-            
-            .club-background,
-            .beach-background,
-            .alumni-background,{
-                
-             -webkit-background-size: cover;
-             -moz-background-size: cover;
-             background-size: cover;
-             -o-background-size: cover;
-             padding-top: 50px;
-            height: 250px;
-            
-            
-                @media screen and (min-width : 768px){
-                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                    -moz-box-shadow: 0px 25px 10px -10px #888888;
-                    -o-box-shadow: 0px 25px 10px -10px #888888;
-                    box-shadow: 0px 25px 10px -10px #888888;
-                    height: 300px;
-                    margin: 15px;
-                }
-            
-                &:hover{
-                    -webkit-transform: scale(1.05);
-                    -moz-transform: scale(1.05);
-                    position: relative;
+       
+}
 
-                        @media screen and (min-width : 768px){
-                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                        -moz-box-shadow: 0px 22px 15px -15px #888888;
-                        -o-box-shadow: 0px 22px 15px -15px #888888;
-                        box-shadow: 0px 22px 15px -15px #888888;
-                        z-index: 5;
-                        }
-                }     
-            }*/   
-        
+.background,
+.about_calendar_contact-background,
+.events-background,
+.players-background{
+    @media screen and (min-width:768px){
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+}
+//background coloring for most white sections//
+.programs-section,
+.trainers-coaches,
+.super-select-section,
+.private-training-section{
+    padding: 30px 15px;
+    background: rgb(255,255,255);
+    
+            @media screen and (min-width:768px){
+
+            }
+            @media screen and (min-width:992px){
+                padding: 30px 15px;
+                background: rgba(255,255,255,0.82);
+            }
+    
+    hr{
+        border:1px solid #000000;
+    }
+}
+ 
+//background coloring for most black sections//
+.contact-page >div:nth-of-type(2),
+.calendar-page >div:nth-of-type(2),
+.events,
+.camp-list,
+.players-section,
+.who-we-are,
+.complete-player-section,
+.shooting-lab-section{
+    padding: 30px 15px;
+    background: rgb(0,0,0);
+    
+            @media screen and (min-width:768px){
+
+            }
+            @media screen and (min-width:992px){
+                padding: 30px 15px;
+                background: rgba(0,0,0,.82);
+            }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: uppercase;
+        font-family: "Helvetica Neue","Josefin Slab",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #ffffff;
     }
     
-    .training{
-  
-            .peak-performance-background{
-                background: url('../images/PeakPerformance.jpg') no-repeat center top;
-            }
-            .weight-room-background{
-                 background: url('../images/weightRoom.jpg') no-repeat center top;
-            }
-            
-            .peak-performance-background,
-            .weight-room-background{
-                -webkit-background-size: cover;
-                 -moz-background-size: cover;
-                 background-size: cover;
-                 -o-background-size: cover;
-                 padding-top: 50px;
-                height: 250px;
-                margin: 0px;
-                
-                @media screen and (min-width : 768px){
-                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                    -moz-box-shadow: 0px 25px 10px -10px #888888;
-                    -o-box-shadow: 0px 25px 10px -10px #888888;
-                    box-shadow: 0px 25px 10px -10px #888888;
-                    height: 300px;
-                    margin: 0px -5px 15px -5px;
-                }
-                
-                &:hover{
-                    -webkit-transform: scale(1.05);
-                    -moz-transform: scale(1.05);
-                    position: relative;
+    hr{
+        border:1px solid #ffffff;
+    }
+    p{
+        color: #ffffff;
+    }
+}
 
-                        @media screen and (min-width : 768px){
-                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                        -moz-box-shadow: 0px 22px 15px -15px #888888;
-                        -o-box-shadow: 0px 22px 15px -15px #888888;
-                        box-shadow: 0px 22px 15px -15px #888888;
-                        z-index: 5;
-                        }
-                }     
-            }
-
-            /*.peak-performance-background{
-                
-                    background: url('../images/PeakPerformance.jpg') no-repeat center top;
-                   
-                }
-            .weight-room-background{
-          
-                    background: url('../images/weightRoom.jpg') no-repeat center top;
-                }
-        
-            .peak-performance-background,
-            .weight-room-background{
-                 -webkit-background-size: cover;
-                 -moz-background-size: cover;
-                 background-size: cover;
-                 -o-background-size: cover;
-                 padding-top: 50px;
-                height: 250px;
-                
-                @media screen and (min-width : 768px){
-                    -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                    -moz-box-shadow: 0px 25px 10px -10px #888888;
-                    -o-box-shadow: 0px 25px 10px -10px #888888;
-                    box-shadow: 0px 25px 10px -10px #888888;
-                    height: 300px;
-                    margin: 15px;
-                }
-            
-                &:hover{
-                    -webkit-transform: scale(1.05);
-                    -moz-transform: scale(1.05);
-                    position: relative;
-
-                        @media screen and (min-width : 768px){
-                             -webkit-box-shadow: 0px 20px 10px -10px #888888;
-                        -moz-box-shadow: 0px 22px 15px -15px #888888;
-                        -o-box-shadow: 0px 22px 15px -15px #888888;
-                        box-shadow: 0px 22px 15px -15px #888888;
-                        z-index: 5;
-                        }
-                }     
-            }*/
-            
-            
-        }
-
-    .news{
-        padding-top: 50px;
-        padding-bottom: 80px;
-        margin-top: 50px;
-        
-        @media screen and(min-width:768px){
-        margin-top: 20px;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        {
-            color: #000000;
-        }
-        h3{
-            text-decoration: underline;
+footer{
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px #ffffff solid;
+    
+    p{
+        color: #ffffff;    
+    }
+    
+    .footer{
+        div>div{
+            margin-top: 5px;
         }
         ul{
-            list-style: none;
-            display: inline-table;
+            list-style:none;
+            padding-left:0;
+         li{
+            margin-top:-5px;
+            display: inline-block;
             
-            li{
-               font-size: 20px;
-                margin-left: -40px;
+          >a > i {
+                width: 40px;
+                height: 40px;
+                color: #ffffff;
+                background-color: #000000;
+                font-size: 26px;
+                text-align:center;
+                padding-top: 7px;
+                margin-left: 10px;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -o-border-radius: 50%;
+                transition: all ease 0.3s;
+                -moz-transition: all ease 0.3s;
+                -webkit-transition: all ease 0.3s;
+                -o-transition: all ease 0.3s;
+                -ms-transition: all ease 0.3s;
+              
+                      &:hover {
+                        color: #FFF;
+                        background: #4060A5;
+                        text-decoration: none;
+                        transition: all ease 0.3s;
+                        -moz-transition: all ease 0.3s;
+                        -webkit-transition: all ease 0.3s;
+                        -o-transition: all ease 0.3s;
+                        -ms-transition: all ease 0.3s;
+                        } 
+                }  
+              
+            }
             }
         }
-        .testimonials{
-            margin-top: 75px;
-                
-                @media screen and(min-width:768px){
-                margin-top: 0px;
-                }
-                
+}
+
+
+//HOME PAGE STYLING//----------------------------------------------------------------------------------------------------------
+.home-page{
+    .head-logo-section{
+        margin-top: 80px;
+
+        @media screen and (min-width:768px){
+            margin-top: 140px;
+            margin-bottom: 80px;
+        }
+
+        @media screen and (min-width:992px){
+            margin-top: 140px;
+            margin-bottom: 100px;
+        }
             img{
-                width: 100px;
+            display: block;
+            margin: auto;
+            width: 200px;
+
+                @media screen and (min-width:768px){
+                    margin: auto;
+                    display: block;
+                    width: 30%;
+                }
+        }
+
+        a,
+        &:focus{
+            color: rgba(0,0,0,.6);
+
+            &:hover{
+                color: #000000;
+            }
+        }
+        .glyphicon-chevron-down{
+                    font-size: 60px;
+                    text-align: center;
+                    margin-top: 50px;
+                    }
+    }
+
+    .mission-statement-section{
+            padding: 30px 15px;
+            background: #000;
+            background: rgb(0,0,0);
+
+            hr{
+                max-width: 200px;
+                border-color: #ffffff;
             }
             p{
-                font-size: 20px;
+                color: #ffffff;
+                
+                 span {
+                    font-style: italic;
+                    font-weight: bold; 
+                }
+            }
+            span:nth-child(5){
+                    font-size:10pt;        
+                    }
+            span:nth-child(6){
+                    font-size:17pt; 
+                    font-weight: bold;
+                    }
+
+            .im-possible{
+
+                p{
+                    text-align: right;
+                    margin-top: 5px;
+                    color:#c42027;
+                }
+                a{
+                    width: 125px;
+                    display: block;
+                    float: left;
+                    margin-left: -25px;
+                }
+            }
+    }
+
+    .programs-section{
+
+
+        h1{
+            margin-top: 60px;
+        }
+        p{
+            color:#000000;
+        }
+        .head{
+            p:nth-of-type(3){
+                font-size: 22px;
+            }
+        }
+        .classes{
+            
+            p{
+                color: #000000;
+                font-size: 16px;
+                padding: 0px 30px 30px 30px;
+                margin: auto;
+
+                >span:nth-of-type(1){
+                    display: block;
+                    }
+                >span:nth-of-type(2){
+                    display: none;
+                    } 
+
+                    @media screen and (min-width:768px){
+                        >span:nth-of-type(1){
+                        display: none;
+                            }
+                        >span:nth-of-type(2){
+                        display: block;
+                            }  
+                    }
+                }   
+
+        }
+
+        .news-letter{
+            >div{
+                margin-top: 60px;
+            }
+
+                p{
+                    color: #000000;
+                    font-weight: bold;
+                }
+        }
+    }
+
+    .players-section{
+          
+        hr{
+            max-width: 200px;
+        }
+        img{
+            margin: auto;
+        }
+        a:hover{
+            text-decoration: none;
+
+                h5{
+                color: #ff0000;
+                }
+        }
+         //flip effect  
+            #f1_container {
+              width: 100px;
+              height: 150px;
+              z-index: 1;
+                 @media screen and (min-width: 768px){
+                        width: 150px;
+                        height: 200px;
+                    }
+            }
+            #f1_container {
+              perspective: 1000;
+            }
+            #f1_card {
+              width: 100%;
+              height: 100%;
+                padding-left: -100px;
+              transform-style: preserve-3d;
+              transition: all .7s linear;
+            }
+            #f1_container:hover #f1_card {
+              transform: rotateY(180deg);
+            }
+            .face {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+            }
+            .face.back {
+              display: block;
+              transform: rotateY(180deg);
+              color: white;
+              text-align: center;
+            }
+     // 
+        div:nth-of-type(1) >div{
+            
+                div{
+
+                    width: 100px;
+                    height: 150px;
+                    margin: auto;
+
+                            @media screen and (min-width: 768px){
+                                width: 150px;
+                                height: 200px;
+                            }
+
+                        hr{
+                            max-width:100px;
+                            margin-top: -5px;
+                            margin-bottom: -5px;  
+                        }
+                        h5{
+                            font-weight: 500;
+                            font-size: 12px;
+                        }
+                    }
+                }
+    }
+}
+
+
+//ABOUT PAGE STYLING//---------------------------------------------------------------------------------------------------------
+.about-page{
+    .who-we-are{
+    h2,
+    h3,{
+        color:#ffffff;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+    
+    .tanner-lind{
+        margin-top: 50px;
+        
+        hr{
+            margin-top: 1px;
+            margin-bottom: -19px;
+            max-width: 200px;
+        }
+        
+        div:nth-of-type(2){
+            img{
+            border: #ffffff solid 2px;
+            }
+        
+        
+            ul{
+                div:nth-of-type(1){
+                    display: inline-table;
+
+                    div{
+                        color: #ffffff;
+                        text-align: left;
+                    }
+
+                }
+            }
+        }
+        
+        div:nth-of-type(3){
+            
+            p{
                 text-align: left;
             }
         }
     }
-    
-    .sponsors{
-    
+}
 
-        h1{
+    .trainers-coaches{
+    
+    div:nth-of-type(1){
+        
+        div:nth-of-type(1){
+            img{
+                padding-top: 45px;
+            } 
+        }
+        
+        div:nth-of-type(2){
+            h3{
+                hr{
+                    margin-top: 1px;
+                    margin-bottom: -19px;
+                    max-width: 200px;
+                }
+            }
+            
+            p{
+                color: #000000;
+                text-align: left;
+            }
+        }
+        
+    }
+    
+    div:nth-of-type(2){
+        
+        img{
+            margin-top: 100px;
+        }
+        
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 200px;
+        }
+        
+        div{
+            img{
+                margin: auto;
+                width: 150px;
+            }
+        }
+        
+    }
+    
+    
+}
+}
+
+
+//TRAINING PAGE STYLING//-------------------------------------------------------------------------------------------------------
+.training-page{
+    
+    h4{
+        color:#ff0000;
+    }
+    
+    p>span{
+        color: #ff0000;
+    }
+    .title{
+        img{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 0px; 
+            padding-top: 70px;
+
+                @media screen and(min-width: 768px){
+                    margin-top: 0pxpx;
+                    margin-bottom: 0px;
+                    padding-bottom: 0px; 
+                }
+        }
+        
+        background: url('../img/BackgroundImg/trainingcoverimage.jpg') no-repeat center top fixed;
+        -webkit-background-size: 150%;
+        -moz-background-size: 150%;
+        background-size: 150%;
+        -o-background-size: 150%;
+        height: 300px;
+        
+    
             @media screen and(min-width:768px){
-              
+                background: url('../img/BackgroundImg/trainingcoverimage.jpg') no-repeat center top fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+                height: 500px;
+                }
+    }
+    
+    .complete-player-section,
+    .super-select-section,
+    .shooting-lab-section,
+    .private-training-section{
+        
+        hr{
+            max-width: 250px;
+        }
+    }
+    
+    .complete-player-section,
+    .shooting-lab-section{
+        div{
+            div:nth-of-type(1){
+                img{
+                    width: 80%;
+                    margin: auto;
+                    border: 3px #ffffff solid;
+                    border-radius: 3px;   
+                }
+            }
+            div:nth-of-type(2){ 
+                img:nth-of-type(1){
+                    width: 125px;
+                }
+                    img:nth-of-type(2){
+                        width: 250px;
+                        margin: auto;
+                        border: 3px #ffffff solid;
+                        border-radius: 3px; 
+                    }
+                
+            }
+        }        
+    }
+    
+    .super-select-section,
+    .private-training-section{
+         div{
+            div:nth-of-type(1){
+                 img:nth-of-type(1){
+                    width: 125px;
+                }
+                img:nth-of-type(2){
+                    width: 250px;
+                    margin: auto;
+                    border: 3px #000000 solid;
+                    border-radius: 3px; 
+                }
+            }
+            div:nth-of-type(2){ 
+               
+               img{
+                    width: 80%;
+                    margin: auto;
+                    border: 3px #000000 solid;
+                    border-radius: 3px;   
+                } 
+            }
+        }        
+        
+        h2{
+            color: #000000;
+        }
+        
+    }
+    #disclaimer{
+        border-top: 1px solid #000000;
+        padding-top: 20px;
+        margin-top: 70px;
+        margin-bottom: -20px;
+        text-align: left;
+        font-size: 10px;
+    }
+}
+
+
+//EVENTS PAGE STYLING//----------------------------------------------------------------------------------------------------------
+.events-page{
+    
+    .title{
+        height: 270px;
+        
+            @media screen and(min-width:560px){
+                height: 400px;
+            }
+            
+        
+        
+         img{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 0px; 
+            padding-top: 70px;
+
+                @media screen and(min-width: 768px){
+                    margin-top: 160px;
+                    margin-bottom: 70px;
+                    padding-bottom: 10px; 
+                    padding-top: 0px;
+                }
+        }
+    }
+    
+    .camp-list{
+    border-bottom: 3px solid #ffffff;
+    
+    hr{
+        max-width: 200px;
+    }
+    
+    
+    ul{
+        list-style: none;
+        padding: 0px;
+        font-size: 20px;
+    }
+}
+
+    .events{
+    
+            @media screen and(min-width:768px){
+                padding: 0px;
+                padding-bottom: 30px;
+            }
+        .leu-fall-league{
+            background:
+                linear-gradient(
+               rgba(0,0,0,.65),
+               rgba(0,0,0,.65)
+                ),
+                url('../img/BackgroundImg/LEUbracket.jpg') no-repeat center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size:150%;
+            -o-background-size: cover;
+            border-bottom: 3px solid #ffffff;
+            padding-bottom: 30px;
+
+            .AAU-disclaimer{
+                margin-top: 500px;
+
+            } 
+
+            .registration-info{
+                p{
+                    font-size: 25px;
+                }
+                hr{
+                    max-width: 300px;
+                }
+            }
+            .league-details{
+                span{
+                    text-decoration: underline;
+                }
+            }
+
+            table,
+            th,
+            td{
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                margin: auto;
+                margin-top: 20px;
+                padding: 5px;
+                
+                th{
+                    background: #ffffff;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+
+            @media screen and(min-width:768px){
+                background:
+                linear-gradient(
+               rgba(0,0,0,.5),
+               rgba(0,0,0,.5)
+                ),
+                url('../img/BackgroundImg/LEUbracket.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size:cover;
+                -o-background-size: cover;
+
+               .AAU-disclaimer{
+                    margin-top: 350px;
+
+                } 
             }
 
         }
-        .divide{
-            border: 1px solid #2c7eb6;
-            margin-top: 40px;
+
+        h1,
+        p{
+            text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+        }
+
+        .host-camp{
+
+            padding-top: 20px;
+
+            hr{
+                max-width:300px;
+            }
+
         }
     }
 
 }
+
+
+//PLAYERS PAGE STYLING//----------------------------------------------------------------------------------------------------------
+.players-page{
+    background: rgba(0,0,0,.7);
     
+            @media screen and (min-width:768px){
 
-
-
-
-
-
-/*Home Page Hero Video CSS
-.homepage-hero-module {
-  border-right: none;
-  border-left: none;
-  position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-  display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important;
-}
-.imgVideo-container {
-  position: relative;
-  bottom: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: #000;
-}
-.video-container .poster img {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-}
-.video-container .filter {
-  z-index: 100;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-}
-.video-container .title-container {
-  z-index: 1000;
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-.video-container .description .inner {
-  font-size: 1em;
-  width: 45%;
-  margin: 0 auto;
-}
-.video-container .link {
-  position: absolute;
-  bottom: 3em;
-  width: 100%;
-  text-align: center;
-  z-index: 1001;
-  font-size: 2em;
-  color: #fff;
-}
-.video-container .link a {
-  color: #fff;
-}
-.video-container video {
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-}
-.video-container video.fillWidth {
-  width: 100%;
-}
-End Hero Video CSS*/
-
-/*APPLY TO ALL*/
-/*.descriptionBox,
-.switch:hover>.titleBox{
-    display:none;
-}
-.switch:hover>.descriptionBox{
-    display: block;
-}*/
-
-
-
-
-
-
-/*End Home Page VB feature*/
-
-
-
-
-
-
-
-/* Custom, iPhone Retina */ 
-@media screen and (min-width : 320px) {
-
-}
-
-/* Small Devices, Tablets */
-@media screen and (min-width : 768px) {
-}
-   
-
-/* Medium Devices, Desktops */
-@media screen and (min-width : 992px) {
-  
-}
-
-/* Large Devices, Wide Screens */
-@media screen and (min-width : 1200px) {
+            }
+            @media screen and (min-width:992px){
+                background: rgba(0,0,0,.7);
+            }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: uppercase;
+        font-family: "Helvetica Neue","Josefin Slab",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #ffffff;
+    }
+    
+    .title{
+        img{
+            margin-bottom: -10px;
+        }
+        hr{
+            max-width: 200px;
+            margin-bottom: 150px;
+        }
+    }
+    
+    .pros,
+    .collegiate{
+        h4{
+            text-decoration: underline;
+        }
+        >div:not(:last-child){
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px #ffffff solid;
+            
+            div:nth-of-type(even){
+                display: inline-table;
+                color: #fff;
+                text-align: left;
+                font-size: 14px;
+            }
+            
+            iframe{
+                height: 250px;
+                margin: auto;
+            }
+        }
+        
+    }
     
 }
 
+//CALENDAR PAGE//----------------------------------------------------------------------------------------------------------
+.calendar-page{
+    >div:nth-of-type(2){
+        
+        >div:nth-of-type(2){
+            iframe{
+                margin: auto;
+                display: block;
+                width: 800px;
+                height: 600px;
+            }
+        }
+    }
+    
+}
+
+//CONTACT PAGE//----------------------------------------------------------------------------------------------------------
+.contact-page{
+
+    .google-map{
+        overflow: hidden;
+        width: 700px;
+        height: 500px;
+        resize: none;
+        max-width: 100%;
+
+        div{
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+
+            iframe{
+                height: 100%;
+                width: 100%;
+                border: 0;
+            }
+        }
+
+
+    }
+    
+}

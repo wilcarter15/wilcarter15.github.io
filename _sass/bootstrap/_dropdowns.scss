@@ -41,7 +41,7 @@
   list-style: none;
   font-size: $font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
-  background-color: #ffffff;
+  background-color: $dropdown-bg;
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
   border-radius: $border-radius-base;
@@ -68,20 +68,19 @@
     clear: both;
     font-weight: normal;
     line-height: $line-height-base;
-    color: #2c7eb6;
+    color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
 }
 
 // Hover/Focus state
 .dropdown-menu > li > a {
-  &:hover{
+  &:hover,
+  &:focus {
     text-decoration: none;
-    color: #f4c132;
+    color: $dropdown-link-hover-color;
+    background-color: $dropdown-link-hover-bg;
   }
-    &:focus{
-        
-    }
 }
 
 // Active state
