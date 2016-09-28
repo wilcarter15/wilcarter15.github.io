@@ -6216,17 +6216,17 @@ footer {
   transform: rotateY(180deg);
   color: white;
   text-align: center; }
-.home-page .players-section div:nth-of-type(1) > div div {
+.home-page .players-section div:nth-of-type(1) > div div div {
   width: 100px;
   margin: auto; }
   @media screen and (min-width: 768px) {
-    .home-page .players-section div:nth-of-type(1) > div div {
+    .home-page .players-section div:nth-of-type(1) > div div div {
       width: 140px; } }
-  .home-page .players-section div:nth-of-type(1) > div div hr {
+  .home-page .players-section div:nth-of-type(1) > div div div hr {
     max-width: 100px;
     margin-top: -5px;
     margin-bottom: -5px; }
-  .home-page .players-section div:nth-of-type(1) > div div h5 {
+  .home-page .players-section div:nth-of-type(1) > div div div h5 {
     font-weight: 500;
     font-size: 12px; }
 
