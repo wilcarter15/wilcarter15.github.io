@@ -14,4 +14,8 @@ Navigation Bar:
         Social Media icon links from Font Awesome (font awesome flies in 'fonts' folder)  styled - _navbar.scss/.navbar-default .navbar-nav 
         
         Footer css is found in _custom.scss/footer
+        
+        Desktop Social media icons, padding-right created and alterned- _navbar.scss/ .navbar-colapse .addthis_inline_follow_toolbox ~line 88
+        
+        Mobile Social media icons, margin-top created and altered _navbar.scss/ .navbar-brand .addthis_inline-follow-toolbox 
     
