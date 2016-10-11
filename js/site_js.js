@@ -18,7 +18,7 @@ if (!alreadyDisplayed || alreadyDisplayed == 'false') {
 
 //home page scroll
 $(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
+	$('a[href^="#scroll"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
@@ -34,5 +34,6 @@ $(document).ready(function(){
     
 });
  
+
 
 
