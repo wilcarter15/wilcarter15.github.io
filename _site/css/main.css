@@ -5870,6 +5870,12 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .background {
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      background-size: 100%;
+      -o-background-size: 100%; } }
 
 .about_calendar_contact-background {
   background: url("../img/BackgroundImg/Original%20Ball%20and%20Shoes.jpg") no-repeat center top fixed;
@@ -5878,13 +5884,19 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .about_calendar_contact-background {
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      background-size: 100%;
+      -o-background-size: 100%; } }
 
 .events-background {
   background: url("../img/BackgroundImg/campbackground3.jpg") no-repeat center top fixed;
-  -webkit-background-size: 160%;
-  -moz-background-size: 160%;
+  -webkit-background-size: 110%;
+  -moz-background-size: 110%;
   background-size: 110%;
-  -o-background-size: 160%; }
+  -o-background-size: 110%; }
 
 .players-background {
   background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center top fixed;
@@ -5904,6 +5916,12 @@ img {
       -moz-background-size: 300%;
       background-size: 200%;
       -o-background-size: 300%; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .players-background {
+      -webkit-background-size: 200%;
+      -moz-background-size: 200%;
+      background-size: 200%;
+      -o-background-size: 200%; } }
 
 @media screen and (min-width: 768px) {
   .background,
@@ -5941,7 +5959,8 @@ img {
 .players-section,
 .who-we-are,
 .complete-player-section,
-.shooting-lab-section {
+.shooting-lab-section,
+.waiver > div {
   padding: 30px 15px;
   background: black; }
   @media screen and (min-width: 992px) {
@@ -5952,7 +5971,8 @@ img {
     .players-section,
     .who-we-are,
     .complete-player-section,
-    .shooting-lab-section {
+    .shooting-lab-section,
+    .waiver > div {
       padding: 30px 15px;
       background: rgba(0, 0, 0, 0.82); } }
   .contact-page > div:nth-of-type(2) h1,
@@ -6002,7 +6022,13 @@ img {
   .shooting-lab-section h3,
   .shooting-lab-section h4,
   .shooting-lab-section h5,
-  .shooting-lab-section h6 {
+  .shooting-lab-section h6,
+  .waiver > div h1,
+  .waiver > div h2,
+  .waiver > div h3,
+  .waiver > div h4,
+  .waiver > div h5,
+  .waiver > div h6 {
     text-transform: uppercase;
     font-family: "Helvetica Neue","Josefin Slab",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -6015,7 +6041,8 @@ img {
   .players-section hr,
   .who-we-are hr,
   .complete-player-section hr,
-  .shooting-lab-section hr {
+  .shooting-lab-section hr,
+  .waiver > div hr {
     border: 1px solid #ffffff; }
   .contact-page > div:nth-of-type(2) p,
   .calendar-page > div:nth-of-type(2) p,
@@ -6024,7 +6051,8 @@ img {
   .players-section p,
   .who-we-are p,
   .complete-player-section p,
-  .shooting-lab-section p {
+  .shooting-lab-section p,
+  .waiver > div p {
     color: #ffffff; }
 
 footer {
@@ -6054,7 +6082,9 @@ footer {
   .home-page .head-logo-section .logo {
     display: block;
     margin: auto;
-    width: 200px; }
+    width: 200px;
+    opacity: 1;
+    transition: opacity 3s .8s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .logo {
         margin: auto;
@@ -6062,13 +6092,17 @@ footer {
         width: 30%; } }
   .home-page .head-logo-section .get-in-the-game {
     width: 300px;
-    margin-bottom: -30px; }
+    margin-bottom: -30px;
+    opacity: 1;
+    transition: opacity 2s 2.5s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .get-in-the-game {
-        margin-bottom: -30px; } }
+        margin-bottom: -60px; } }
     @media screen and (min-width: 992px) {
       .home-page .head-logo-section .get-in-the-game {
         width: 400px; } }
+  .home-page .head-logo-section .fadeIn {
+    opacity: 0; }
   .home-page .head-logo-section a, .home-page .head-logo-section:focus {
     color: rgba(0, 0, 0, 0.6); }
     .home-page .head-logo-section a:hover, .home-page .head-logo-section:focus:hover {
@@ -6077,6 +6111,40 @@ footer {
     font-size: 60px;
     text-align: center;
     margin-top: 50px; }
+  .home-page .head-logo-section span {
+    opacity: 1;
+    transition: opacity .8s 4s; }
+.home-page .news-feed {
+  background-color: #000000; }
+  @media screen and (min-width: 768px) {
+    .home-page .news-feed {
+      background-color: rgba(0, 0, 0, 0.82); } }
+  .home-page .news-feed h1,
+  .home-page .news-feed h2,
+  .home-page .news-feed h3,
+  .home-page .news-feed h4,
+  .home-page .news-feed h5,
+  .home-page .news-feed h6,
+  .home-page .news-feed p {
+    color: #ffffff; }
+  .home-page .news-feed .NewsFeedTittle {
+    width: 500px; }
+  .home-page .news-feed .FB:hover,
+  .home-page .news-feed .IG:hover,
+  .home-page .news-feed .TW:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    position: relative;
+    z-index: 10; }
+    @media screen and (min-width: 768px) {
+      .home-page .news-feed .FB:hover,
+      .home-page .news-feed .IG:hover,
+      .home-page .news-feed .TW:hover {
+        -webkit-box-shadow: 0px 20px 10px -10px #888888;
+        -moz-box-shadow: 0px 22px 15px -15px #888888;
+        -o-box-shadow: 0px 22px 15px -15px #888888;
+        box-shadow: 0px 22px 15px -15px #888888;
+        z-index: 5; } }
 .home-page .mission-statement-section {
   padding: 30px 15px;
   background: #000;
@@ -6221,6 +6289,8 @@ footer {
   color: #ff0000; }
 .training-page p > span {
   color: #ff0000; }
+.training-page .facebook p {
+  margin-top: 10px; }
 .training-page .title {
   background: url("../img/BackgroundImg/trainingcoverimage.jpg") no-repeat center top fixed;
   -webkit-background-size: 150%;
@@ -6245,6 +6315,14 @@ footer {
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
+      height: 500px; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .training-page .title {
+      background: url("../img/BackgroundImg/trainingcoverimage.jpg") no-repeat center top fixed;
+      -webkit-background-size: 120%;
+      -moz-background-size: 120%;
+      background-size: 120%;
+      -o-background-size: 120%;
       height: 500px; } }
 .training-page .complete-player-section hr,
 .training-page .super-select-section hr,
@@ -6291,6 +6369,8 @@ footer {
   margin-bottom: -20px;
   text-align: left;
   font-size: 10px; }
+.training-page .sign-up {
+  font-size: 24px; }
 
 .events-page .title {
   height: 270px; }
@@ -6316,6 +6396,21 @@ footer {
     list-style: none;
     padding: 0px;
     font-size: 20px; }
+.events-page .the-great-giveaway {
+  background-color: #000000; }
+  .events-page .the-great-giveaway p {
+    color: #ffffff; }
+  .events-page .the-great-giveaway h1, .events-page .the-great-giveaway h2, .events-page .the-great-giveaway h4 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px; }
+  .events-page .the-great-giveaway h3 {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline; }
+  .events-page .the-great-giveaway ul {
+    list-style: none;
+    color: #ffffff; }
 @media screen and (min-width: 768px) {
   .events-page .events {
     padding: 0px;
@@ -6330,6 +6425,9 @@ footer {
   padding-bottom: 30px; }
   .events-page .events .leu-fall-league .AAU-disclaimer {
     margin-top: 500px; }
+    @media screen and (min-width: 768px) {
+      .events-page .events .leu-fall-league .AAU-disclaimer {
+        margin-top: 250px; } }
   .events-page .events .leu-fall-league .registration-info p {
     font-size: 25px; }
   .events-page .events .leu-fall-league .registration-info hr {
@@ -6356,9 +6454,7 @@ footer {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
-      -o-background-size: cover; }
-      .events-page .events .leu-fall-league .AAU-disclaimer {
-        margin-top: 350px; } }
+      -o-background-size: cover; } }
 .events-page .events h1,
 .events-page .events p {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000; }
@@ -6427,3 +6523,6 @@ footer {
       height: 100%;
       width: 100%;
       border: 0; }
+
+.waiver > div {
+  margin-top: 50px; }

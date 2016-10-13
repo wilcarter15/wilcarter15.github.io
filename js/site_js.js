@@ -30,7 +30,8 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-
+    
+    $('img, span').removeClass('fadeIn');
     
 });
  
