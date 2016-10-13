@@ -6084,7 +6084,7 @@ footer {
     margin: auto;
     width: 200px;
     opacity: 1;
-    transition: opacity 3s .8s; }
+    transition: opacity 3s 1.3s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .logo {
         margin: auto;
@@ -6094,7 +6094,7 @@ footer {
     width: 300px;
     margin-bottom: -30px;
     opacity: 1;
-    transition: opacity 2s 2.5s; }
+    transition: opacity 2s 3s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .get-in-the-game {
         margin-bottom: -60px; } }
@@ -6113,7 +6113,7 @@ footer {
     margin-top: 50px; }
   .home-page .head-logo-section span {
     opacity: 1;
-    transition: opacity .8s 4s; }
+    transition: opacity .8s 4.5s; }
 .home-page .news-feed {
   background-color: #000000; }
   @media screen and (min-width: 768px) {
@@ -6416,6 +6416,7 @@ footer {
     padding: 0px;
     padding-bottom: 30px; } }
 .events-page .events .leu-fall-league {
+  padding-top: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/BackgroundImg/LEUbracket.jpg") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
