@@ -6519,7 +6519,7 @@ footer {
     -o-background-size: 120%; }
 
   .players-background {
-    background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center center fixed;
+    background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center top fixed;
     -webkit-background-size: 200%;
     -moz-background-size: 200%;
     background-size: 200%;
