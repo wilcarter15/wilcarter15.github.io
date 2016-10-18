@@ -5870,12 +5870,6 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .background {
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: 100%;
-      -o-background-size: 100%; } }
 
 .about_calendar_contact-background {
   background: url("../img/BackgroundImg/Original%20Ball%20and%20Shoes.jpg") no-repeat center top fixed;
@@ -5884,12 +5878,6 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .about_calendar_contact-background {
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: 100%;
-      -o-background-size: 100%; } }
 
 .events-background {
   background: url("../img/BackgroundImg/campbackground3.jpg") no-repeat center top fixed;
@@ -5916,12 +5904,6 @@ img {
       -moz-background-size: 300%;
       background-size: 200%;
       -o-background-size: 300%; } }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .players-background {
-      -webkit-background-size: 200%;
-      -moz-background-size: 200%;
-      background-size: 200%;
-      -o-background-size: 200%; } }
 
 @media screen and (min-width: 768px) {
   .background,
@@ -6527,3 +6509,11 @@ footer {
 
 .waiver > div {
   margin-top: 50px; }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .background {
+    background: url("../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg") no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -o-background-size: 100%; } }
