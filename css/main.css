@@ -6510,17 +6510,10 @@ footer {
 .waiver > div {
   margin-top: 50px; }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .background {
     background: url("../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg") no-repeat center top fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: 100%;
-    -o-background-size: 100%; } }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .background {
-    background: url("../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg") no-repeat center top fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: 100%;
-    -o-background-size: 100%; } }
+    -webkit-background-size: 120%;
+    -moz-background-size: 120%;
+    background-size: 120%;
+    -o-background-size: 120%; } }
