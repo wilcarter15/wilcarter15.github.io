@@ -6298,7 +6298,7 @@ footer {
       background-size: cover;
       -o-background-size: cover;
       height: 500px; } }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .training-page .title {
       background: url("../img/BackgroundImg/trainingcoverimage.jpg") no-repeat center top fixed;
       -webkit-background-size: 120%;
