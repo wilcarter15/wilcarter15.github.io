@@ -6523,4 +6523,8 @@ footer {
     -webkit-background-size: 200%;
     -moz-background-size: 200%;
     background-size: 200%;
-    -o-background-size: 200%; } }
+    -o-background-size: 200%; }
+
+  .pros,
+  .collegiate {
+    background-color: #000000; } }
