@@ -5870,12 +5870,6 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .background {
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: 100%;
-      -o-background-size: 100%; } }
 
 .about_calendar_contact-background {
   background: url("../img/BackgroundImg/Original%20Ball%20and%20Shoes.jpg") no-repeat center top fixed;
@@ -5884,12 +5878,6 @@ img {
   background-size: 160%;
   -o-background-size: 160%;
   height: 400px; }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .about_calendar_contact-background {
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: 100%;
-      -o-background-size: 100%; } }
 
 .events-background {
   background: url("../img/BackgroundImg/campbackground3.jpg") no-repeat center top fixed;
@@ -5916,12 +5904,6 @@ img {
       -moz-background-size: 300%;
       background-size: 200%;
       -o-background-size: 300%; } }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .players-background {
-      -webkit-background-size: 200%;
-      -moz-background-size: 200%;
-      background-size: 200%;
-      -o-background-size: 200%; } }
 
 @media screen and (min-width: 768px) {
   .background,
@@ -6084,7 +6066,7 @@ footer {
     margin: auto;
     width: 200px;
     opacity: 1;
-    transition: opacity 3s .8s; }
+    transition: opacity 3s 1.3s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .logo {
         margin: auto;
@@ -6094,7 +6076,7 @@ footer {
     width: 300px;
     margin-bottom: -30px;
     opacity: 1;
-    transition: opacity 2s 2.5s; }
+    transition: opacity 2s 3s; }
     @media screen and (min-width: 768px) {
       .home-page .head-logo-section .get-in-the-game {
         margin-bottom: -60px; } }
@@ -6113,7 +6095,7 @@ footer {
     margin-top: 50px; }
   .home-page .head-logo-section span {
     opacity: 1;
-    transition: opacity .8s 4s; }
+    transition: opacity .8s 4.5s; }
 .home-page .news-feed {
   background-color: #000000; }
   @media screen and (min-width: 768px) {
@@ -6316,7 +6298,7 @@ footer {
       background-size: cover;
       -o-background-size: cover;
       height: 500px; } }
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .training-page .title {
       background: url("../img/BackgroundImg/trainingcoverimage.jpg") no-repeat center top fixed;
       -webkit-background-size: 120%;
@@ -6397,7 +6379,8 @@ footer {
     padding: 0px;
     font-size: 20px; }
 .events-page .the-great-giveaway {
-  background-color: #000000; }
+  background-color: #000000;
+  border-bottom: 3px solid #ffffff; }
   .events-page .the-great-giveaway p {
     color: #ffffff; }
   .events-page .the-great-giveaway h1, .events-page .the-great-giveaway h2, .events-page .the-great-giveaway h4 {
@@ -6415,46 +6398,14 @@ footer {
   .events-page .events {
     padding: 0px;
     padding-bottom: 30px; } }
-.events-page .events .leu-fall-league {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/BackgroundImg/LEUbracket.jpg") no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: 150%;
-  -o-background-size: cover;
+.events-page .events .training-camp {
+  background: rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #ffffff;
-  padding-bottom: 30px; }
-  .events-page .events .leu-fall-league .AAU-disclaimer {
-    margin-top: 500px; }
-    @media screen and (min-width: 768px) {
-      .events-page .events .leu-fall-league .AAU-disclaimer {
-        margin-top: 250px; } }
-  .events-page .events .leu-fall-league .registration-info p {
-    font-size: 25px; }
-  .events-page .events .leu-fall-league .registration-info hr {
-    max-width: 300px; }
-  .events-page .events .leu-fall-league .league-details span {
-    text-decoration: underline; }
-  .events-page .events .leu-fall-league table,
-  .events-page .events .leu-fall-league th,
-  .events-page .events .leu-fall-league td {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    margin: auto;
-    margin-top: 20px;
-    padding: 5px; }
-    .events-page .events .leu-fall-league table th,
-    .events-page .events .leu-fall-league th th,
-    .events-page .events .leu-fall-league td th {
-      background: #ffffff;
-      color: #000000;
-      text-align: center; }
-  @media screen and (min-width: 768px) {
-    .events-page .events .leu-fall-league {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/BackgroundImg/LEUbracket.jpg") no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover; } }
+  padding-bottom: 20px; }
+  .events-page .events .training-camp h1 {
+    color: #990000; }
+  .events-page .events .training-camp p {
+    font-size: 26px; }
 .events-page .events h1,
 .events-page .events p {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000; }
@@ -6483,25 +6434,54 @@ footer {
     margin-bottom: -10px; }
   .players-page .title hr {
     max-width: 200px;
-    margin-bottom: 150px; }
-  .players-page .pros h4,
-  .players-page .collegiate h4 {
-    text-decoration: underline; }
-  .players-page .pros > div:not(:last-child),
-  .players-page .collegiate > div:not(:last-child) {
-    margin-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px #ffffff solid; }
-    .players-page .pros > div:not(:last-child) div:nth-of-type(even),
-    .players-page .collegiate > div:not(:last-child) div:nth-of-type(even) {
-      display: inline-table;
-      color: #fff;
-      text-align: left;
-      font-size: 14px; }
-    .players-page .pros > div:not(:last-child) iframe,
-    .players-page .collegiate > div:not(:last-child) iframe {
-      height: 250px;
-      margin: auto; }
+    margin-bottom: 50px; }
+  .players-page .pros > div {
+    margin-bottom: 450px; }
+  .players-page .pros div:nth-of-type(3) {
+    margin-bottom: 0px; }
+  .players-page .pros .border {
+    max-width: 300px;
+    margin: auto;
+    border-left: 10px solid #a2a2a2;
+    border-right: 10px solid #a2a2a2;
+    border-bottom: 10px solid #a2a2a2; }
+  .players-page .pros iframe {
+    display: block;
+    height: 240px;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: -1px; }
+  .players-page .pros #f1_container {
+    width: 100%;
+    z-index: 1; }
+    @media screen and (min-width: 768px) {
+      .players-page .pros #f1_container {
+        width: 100%; } }
+  .players-page .pros #f1_container {
+    perspective: 1000; }
+  .players-page .pros #f1_card {
+    width: 100%;
+    height: 100%;
+    padding-left: -100px;
+    transform-style: preserve-3d;
+    transition: all .7s linear; }
+  .players-page .pros #f1_container:hover #f1_card {
+    transform: rotateY(180deg); }
+  .players-page .pros .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+  .players-page .pros .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    color: white;
+    text-align: center; }
+  .players-page .pro-mobile img {
+    margin-bottom: 20px; }
+  .players-page .collegiate .player-image {
+    margin-bottom: 50px; }
 
 .calendar-page > div:nth-of-type(2) > div:nth-of-type(2) iframe {
   margin: auto;
@@ -6526,3 +6506,33 @@ footer {
 
 .waiver > div {
   margin-top: 50px; }
+
+.ipad {
+  display: none; }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .background {
+    background: url("../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg") no-repeat center top fixed;
+    -webkit-background-size: 120%;
+    -moz-background-size: 120%;
+    background-size: 120%;
+    -o-background-size: 120%; }
+
+  .players-background {
+    background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center top fixed;
+    -webkit-background-size: 200%;
+    -moz-background-size: 200%;
+    background-size: 200%;
+    -o-background-size: 200%; }
+
+  .pros,
+  .collegiate {
+    background: #000000;
+    margin-top: 100px; }
+
+  .ipad {
+    display: block; }
+
+  .desktop,
+  .cell {
+    display: none; } }

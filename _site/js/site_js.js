@@ -13,7 +13,7 @@ if (!alreadyDisplayed || alreadyDisplayed == 'false') {
 
     localStorage.setItem('alreadyDisplayed', 'true');
 
-  }, 3000); 
+  }, 10000); 
 }
 
 //home page scroll
