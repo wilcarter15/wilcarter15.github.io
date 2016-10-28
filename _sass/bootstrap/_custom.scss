@@ -64,13 +64,6 @@ img{
     -o-background-size: 160%; 
     height: 400px;  
     
-    //cutom ipad landscape background//
-    @media screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        background-size:100%;
-        -o-background-size: 100%; 
-    }
 }
 .about_calendar_contact-background{
         background: url('../img/BackgroundImg/Original%20Ball%20and%20Shoes.jpg') no-repeat center top fixed;
@@ -80,13 +73,7 @@ img{
         -o-background-size: 160%; 
         height: 400px;
         
-    //cutom ipad landscape background//
-    @media screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        background-size:100%;
-        -o-background-size: 100%; 
-    }
+
 }
 .events-background{
          background: url('../img/BackgroundImg/campbackground3.jpg') no-repeat center top fixed;
@@ -117,13 +104,6 @@ img{
                 -o-background-size: 300%;
             }
     
-    //cutom ipad landscape background//
-    @media screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
-        -webkit-background-size: 200%;
-        -moz-background-size: 200%;
-        background-size:200%;
-        -o-background-size: 200%; 
-    }
        
 }
 
@@ -226,6 +206,7 @@ footer{
 
 //HOME PAGE STYLING//----------------------------------------------------------------------------------------------------------
 .home-page{
+
     .head-logo-section{
         margin-top: 80px;
         margin-bottom: 30px;
@@ -244,7 +225,7 @@ footer{
             margin: auto;
             width: 200px;
             opacity: 1;
-            transition: opacity 3s .8s;
+            transition: opacity 3s 1.3s;
 
                 @media screen and (min-width:768px){
                     margin: auto;
@@ -258,7 +239,7 @@ footer{
             width: 300px;
             margin-bottom: -30px;
             opacity: 1;
-           transition: opacity 2s 2.5s;
+           transition: opacity 2s 3s;
             
             @media screen and (min-width:768px){
                 margin-bottom: -60px;
@@ -291,7 +272,7 @@ footer{
         
         span{
             opacity: 1;
-           transition: opacity .8s 4s;
+           transition: opacity .8s 4.5s;
         }
 
     }
@@ -663,7 +644,7 @@ footer{
             }
         
             //cutom ipad landscape background//
-            @media screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+            @media screen and (min-device-width:768px) and (max-device-width:1024px){
                 background: url('../img/BackgroundImg/trainingcoverimage.jpg') no-repeat center top fixed;
                 -webkit-background-size: 120%;
                 -moz-background-size: 120%;
@@ -797,6 +778,7 @@ footer{
     
     .the-great-giveaway{
         background-color: #000000;
+        border-bottom: 3px solid #ffffff;
         
         p{
             color: #ffffff;
@@ -823,74 +805,21 @@ footer{
                 padding: 0px;
                 padding-bottom: 30px;
             }
-        .leu-fall-league{
-            background:
-                linear-gradient(
-               rgba(0,0,0,.65),
-               rgba(0,0,0,.65)
-                ),
-                url('../img/BackgroundImg/LEUbracket.jpg') no-repeat center top;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size:150%;
-            -o-background-size: cover;
+
+        .training-camp{
+            background: rgba(0,0,0,.1);
             border-bottom: 3px solid #ffffff;
-            padding-bottom: 30px;
-
-            .AAU-disclaimer{
-                margin-top: 500px;
-                
-                @media screen and(min-width:768px){
-                    margin-top: 250px;
-                }
-            } 
-
-            .registration-info{
-                p{
-                    font-size: 25px;
-                }
-                hr{
-                    max-width: 300px;
-                }
+            padding-bottom: 20px;
+            
+            h1{
+                color: #990000;
             }
-            .league-details{
-                span{
-                    text-decoration: underline;
-                }
+            p{
+                font-size: 26px;
             }
-
-            table,
-            th,
-            td{
-                border: 1px solid #ffffff;
-                color: #ffffff;
-                margin: auto;
-                margin-top: 20px;
-                padding: 5px;
-                
-                th{
-                    background: #ffffff;
-                    color: #000000;
-                    text-align: center;
-                }
-            }
-
-            @media screen and(min-width:768px){
-                background:
-                linear-gradient(
-               rgba(0,0,0,.5),
-               rgba(0,0,0,.5)
-                ),
-                url('../img/BackgroundImg/LEUbracket.jpg') no-repeat center center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size:cover;
-                -o-background-size: cover;
- 
-            }
-
+            
         }
-
+        
         h1,
         p{
             text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
@@ -940,33 +869,83 @@ footer{
         }
         hr{
             max-width: 200px;
-            margin-bottom: 150px;
+            margin-bottom: 50px;
         }
     }
     
-    .pros,
-    .collegiate{
-        h4{
-            text-decoration: underline;
-        }
-        >div:not(:last-child){
-            margin-top: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px #ffffff solid;
-            
-            div:nth-of-type(even){
-                display: inline-table;
-                color: #fff;
-                text-align: left;
-                font-size: 14px;
-            }
-            
-            iframe{
-                height: 250px;
-                margin: auto;
-            }
+    .pros{
+        >div{
+            margin-bottom: 450px;
         }
         
+        div:nth-of-type(3){
+            margin-bottom: 0px;
+        }
+        .border{
+            max-width: 300px;
+            margin: auto;
+            border-left: 10px solid #a2a2a2;
+            border-right: 10px solid #a2a2a2;
+            border-bottom: 10px solid #a2a2a2;
+        }
+        
+        iframe{
+            display: block;
+            height: 240px;
+            max-width: 300px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: -1px;
+        }
+
+        
+        //flip effect  
+            #f1_container {
+              width: 100%;
+   
+              z-index: 1;
+                 @media screen and (min-width: 768px){
+                        width: 100%;
+                       
+                    }
+            }
+            #f1_container {
+              perspective: 1000;
+            }
+            #f1_card {
+              width: 100%;
+              height: 100%;
+                padding-left: -100px;
+              transform-style: preserve-3d;
+              transition: all .7s linear;
+            }
+            #f1_container:hover #f1_card {
+              transform: rotateY(180deg);
+            }
+            .face {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+            }
+            .face.back {
+              display: block;
+              transform: rotateY(180deg);
+              color: white;
+              text-align: center;
+            }
+     // 
+        
+    }
+    .pro-mobile{
+        img{
+            margin-bottom: 20px;
+        }
+    }
+    .collegiate{
+        .player-image{
+            margin-bottom: 50px;
+        }
     }
     
 }
@@ -1019,5 +998,42 @@ footer{
     
     >div{
         margin-top: 50px;
+    }
+}
+
+//Custom Ipad CSS//----------------------------------------------------------------------------------------------------------
+.ipad{
+        display: none;
+}
+@media screen and (min-device-width:768px) and (max-device-width:1024px){
+    .background{
+        background: url('../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg') no-repeat center top fixed;
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+
+
+    }
+    .players-background{
+           background: url('../img/BackgroundImg/Original%20feet%20and%20ball.jpg') no-repeat center top fixed;
+        -webkit-background-size: 200%;
+        -moz-background-size: 200%;
+        background-size: 200%;
+        -o-background-size: 200%;
+    }
+    
+    .pros,
+    .collegiate{
+        background: #000000;
+        margin-top: 100px;
+    }
+    
+    .ipad{
+        display: block;
+    }
+    .desktop,
+    .cell{
+        display: none;
     }
 }
