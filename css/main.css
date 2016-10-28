@@ -6435,61 +6435,53 @@ footer {
   .players-page .title hr {
     max-width: 200px;
     margin-bottom: 50px; }
-  .players-page .pros .border,
-  .players-page .collegiate .border {
+  .players-page .pros > div {
+    margin-bottom: 450px; }
+  .players-page .pros div:nth-of-type(3) {
+    margin-bottom: 0px; }
+  .players-page .pros .border {
     max-width: 300px;
     margin: auto;
     border-left: 10px solid #a2a2a2;
     border-right: 10px solid #a2a2a2;
     border-bottom: 10px solid #a2a2a2; }
-  .players-page .pros h4,
-  .players-page .collegiate h4 {
-    text-decoration: underline; }
-  .players-page .pros iframe,
-  .players-page .collegiate iframe {
+  .players-page .pros iframe {
     display: block;
     height: 240px;
     max-width: 300px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px; }
-  .players-page .pros #f1_container,
-  .players-page .collegiate #f1_container {
+  .players-page .pros #f1_container {
     width: 100%;
     z-index: 1; }
     @media screen and (min-width: 768px) {
-      .players-page .pros #f1_container,
-      .players-page .collegiate #f1_container {
+      .players-page .pros #f1_container {
         width: 100%; } }
-  .players-page .pros #f1_container,
-  .players-page .collegiate #f1_container {
+  .players-page .pros #f1_container {
     perspective: 1000; }
-  .players-page .pros #f1_card,
-  .players-page .collegiate #f1_card {
+  .players-page .pros #f1_card {
     width: 100%;
     height: 100%;
     padding-left: -100px;
     transform-style: preserve-3d;
     transition: all .7s linear; }
-  .players-page .pros #f1_container:hover #f1_card,
-  .players-page .collegiate #f1_container:hover #f1_card {
+  .players-page .pros #f1_container:hover #f1_card {
     transform: rotateY(180deg); }
-  .players-page .pros .face,
-  .players-page .collegiate .face {
+  .players-page .pros .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; }
-  .players-page .pros .face.back,
-  .players-page .collegiate .face.back {
+  .players-page .pros .face.back {
     display: block;
     transform: rotateY(180deg);
     color: white;
     text-align: center; }
-  .players-page .pros > div {
-    margin-bottom: 450px; }
-  .players-page .pros div:nth-of-type(3) {
-    margin-bottom: 0px; }
+  .players-page .pro-mobile img {
+    margin-bottom: 20px; }
+  .players-page .collegiate .player-image {
+    margin-bottom: 50px; }
 
 .calendar-page > div:nth-of-type(2) > div:nth-of-type(2) iframe {
   margin: auto;
