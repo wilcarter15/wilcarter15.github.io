@@ -88,19 +88,19 @@ img{
         background: url('../img/BackgroundImg/Original%20feet%20and%20ball.jpg') no-repeat center top fixed;
         -webkit-background-size: 300%;
         -moz-background-size: 300%;
-        background-size: 300%;
+        background-size: 150%;
         -o-background-size: 300%;
             
             @media screen and(min-width:500px){
                 -webkit-background-size: 300%;
                 -moz-background-size: 300%;
-                background-size: 250%;
+                background-size: 150%;
                 -o-background-size: 300%;
             }
             @media screen and(min-width:600px){
                 -webkit-background-size: 300%;
                 -moz-background-size: 300%;
-                background-size: 200%;
+                background-size: 100%;
                 -o-background-size: 300%;
             }
     
@@ -847,7 +847,7 @@ footer{
 
             }
             @media screen and (min-width:992px){
-                background: rgba(0,0,0,.7);
+               
             }
     
     h1,
@@ -862,8 +862,11 @@ footer{
         letter-spacing: 1px;
         color: #ffffff;
     }
+    p{
+        color: #ffffff;
+    }
     
-    .title{
+    .player-title{
         img{
             margin-bottom: -10px;
         }
@@ -873,14 +876,47 @@ footer{
         }
     }
     
-    .pros{
-        >div{
-            margin-bottom: 450px;
+    .hooper-of-week{
+        background: #000000;
+        padding-top: 50px;
+        
+        h2{
+            text-align: center;
         }
         
-        div:nth-of-type(3){
-            margin-bottom: 0px;
+        @media screen and (min-width: 768px){
+            background: none;
+             
+            h2{
+            text-align: left;
+            }
         }
+        iframe{
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+    .pros,
+    .collegiate{
+        padding-top: 50px; 
+        background: #000000;
+        
+        @media screen and (min-width: 768px){
+            background: none;
+        }
+        
+    }
+    
+    .pros{
+        
+        .desktop{
+            >div{
+                margin-bottom: 450px;
+            }
+        }
+        
+        
         .border{
             max-width: 300px;
             margin: auto;
@@ -934,17 +970,27 @@ footer{
               color: white;
               text-align: center;
             }
-     // 
+        // 
         
     }
-    .pro-mobile{
-        img{
-            margin-bottom: 20px;
-        }
-    }
+    
     .collegiate{
+        padding-top: 50px;
+        
+        .title{
+            img{
+                margin-top: 0px;
+            }
+        }
         .player-image{
             margin-bottom: 50px;
+        }
+    }
+    
+    .pro-mobile{
+        img{
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
     
@@ -1002,10 +1048,21 @@ footer{
 }
 
 //Custom Ipad CSS//----------------------------------------------------------------------------------------------------------
-.ipad{
-    display: none;
-}
+    .ipad{
+        display: none;
+    }
+
 @media screen and (min-device-width:768px) and (max-device-width:1024px){
+   
+    .ipad{
+        display: block;
+        
+    }
+    .desktop,
+    .cell{
+        display: none;
+    }
+    
     .background{
         background: url('../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg') no-repeat center top fixed;
         -webkit-background-size: 120%;
@@ -1016,24 +1073,33 @@ footer{
 
     }
     .players-background{
-           background: url('../img/BackgroundImg/Original%20feet%20and%20ball.jpg') no-repeat center top fixed;
-        -webkit-background-size: 200%;
-        -moz-background-size: 200%;
-        background-size: 200%;
-        -o-background-size: 200%;
+        background: url('../img/BackgroundImg/Original%20feet%20and%20ball.jpg') no-repeat center top fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size: 100%;
+        -o-background-size: 100%;
     }
-    
-    .pros,
-    .collegiate{
+ 
+    .players-page{
+        .pros,
+        .collegiate{
+         
         background: #000000;
-        margin-top: 100px;
+        
+        @media screen and (min-width: 768px){
+            background: #000000;
+            }
+        
+        }
     }
     
-    .ipad{
-        display: block;
+    .hooper-of-week{
+        background: #000000;
+        
+        @media screen and (min-width: 768px){
+            background: #000000;
+            }
     }
-    .desktop,
-    .cell{
-        display: none;
-    }
+    
+   
 }
