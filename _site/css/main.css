@@ -5890,19 +5890,19 @@ img {
   background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center top fixed;
   -webkit-background-size: 300%;
   -moz-background-size: 300%;
-  background-size: 300%;
+  background-size: 150%;
   -o-background-size: 300%; }
   @media screen and (min-width: 500px) {
     .players-background {
       -webkit-background-size: 300%;
       -moz-background-size: 300%;
-      background-size: 250%;
+      background-size: 150%;
       -o-background-size: 300%; } }
   @media screen and (min-width: 600px) {
     .players-background {
       -webkit-background-size: 300%;
       -moz-background-size: 300%;
-      background-size: 200%;
+      background-size: 100%;
       -o-background-size: 300%; } }
 
 @media screen and (min-width: 768px) {
@@ -6416,9 +6416,6 @@ footer {
 
 .players-page {
   background: rgba(0, 0, 0, 0.7); }
-  @media screen and (min-width: 992px) {
-    .players-page {
-      background: rgba(0, 0, 0, 0.7); } }
   .players-page h1,
   .players-page h2,
   .players-page h3,
@@ -6430,15 +6427,37 @@ footer {
     font-weight: 700;
     letter-spacing: 1px;
     color: #ffffff; }
-  .players-page .title img {
+  .players-page p {
+    color: #ffffff; }
+  .players-page .player-title img {
     margin-bottom: -10px; }
-  .players-page .title hr {
+  .players-page .player-title hr {
     max-width: 200px;
     margin-bottom: 50px; }
-  .players-page .pros > div {
+  .players-page .hooper-of-week {
+    background: #000000;
+    padding-top: 50px; }
+    .players-page .hooper-of-week h2 {
+      text-align: center; }
+    @media screen and (min-width: 768px) {
+      .players-page .hooper-of-week {
+        background: none; }
+        .players-page .hooper-of-week h2 {
+          text-align: left; } }
+    .players-page .hooper-of-week iframe {
+      display: block;
+      margin: auto;
+      margin-top: 50px; }
+  .players-page .pros,
+  .players-page .collegiate {
+    padding-top: 50px;
+    background: #000000; }
+    @media screen and (min-width: 768px) {
+      .players-page .pros,
+      .players-page .collegiate {
+        background: none; } }
+  .players-page .pros .desktop > div {
     margin-bottom: 450px; }
-  .players-page .pros div:nth-of-type(3) {
-    margin-bottom: 0px; }
   .players-page .pros .border {
     max-width: 300px;
     margin: auto;
@@ -6478,10 +6497,15 @@ footer {
     transform: rotateY(180deg);
     color: white;
     text-align: center; }
+  .players-page .collegiate {
+    padding-top: 50px; }
+    .players-page .collegiate .title img {
+      margin-top: 0px; }
+    .players-page .collegiate .player-image {
+      margin-bottom: 50px; }
   .players-page .pro-mobile img {
+    margin-top: 20px;
     margin-bottom: 20px; }
-  .players-page .collegiate .player-image {
-    margin-bottom: 50px; }
 
 .calendar-page > div:nth-of-type(2) > div:nth-of-type(2) iframe {
   margin: auto;
@@ -6511,6 +6535,13 @@ footer {
   display: none; }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .ipad {
+    display: block; }
+
+  .desktop,
+  .cell {
+    display: none; }
+
   .background {
     background: url("../img/BackgroundImg/Black-and-White-Original-Ball-and-Shoes.jpg") no-repeat center top fixed;
     -webkit-background-size: 120%;
@@ -6520,19 +6551,22 @@ footer {
 
   .players-background {
     background: url("../img/BackgroundImg/Original%20feet%20and%20ball.jpg") no-repeat center top fixed;
-    -webkit-background-size: 200%;
-    -moz-background-size: 200%;
-    background-size: 200%;
-    -o-background-size: 200%; }
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -o-background-size: 100%; }
 
-  .pros,
-  .collegiate {
-    background: #000000;
-    margin-top: 100px; }
+  .players-page .pros,
+  .players-page .collegiate {
+    background: #000000; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-width: 768px) {
+    .players-page .pros,
+    .players-page .collegiate {
+      background: #000000; } }
 
-  .ipad {
-    display: block; }
-
-  .desktop,
-  .cell {
-    display: none; } }
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hooper-of-week {
+    background: #000000; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-width: 768px) {
+    .hooper-of-week {
+      background: #000000; } }
