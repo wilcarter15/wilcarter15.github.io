@@ -6351,8 +6351,6 @@ footer {
   margin-bottom: -20px;
   text-align: left;
   font-size: 10px; }
-.training-page .sign-up {
-  font-size: 24px; }
 
 .events-page .title {
   height: 270px; }
@@ -6563,10 +6561,9 @@ footer {
     .players-page .pros,
     .players-page .collegiate {
       background: #000000; } }
-
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .hooper-of-week {
+  .players-page .hooper-of-week {
     background: #000000; } }
   @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-width: 768px) {
-    .hooper-of-week {
+    .players-page .hooper-of-week {
       background: #000000; } }

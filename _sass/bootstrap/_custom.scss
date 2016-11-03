@@ -728,9 +728,7 @@ footer{
         text-align: left;
         font-size: 10px;
     }
-    .sign-up{
-        font-size: 24px;
-    }
+   
 }
 
 
@@ -1091,15 +1089,13 @@ footer{
             }
         
         }
-    }
-    
-    .hooper-of-week{
-        background: #000000;
         
-        @media screen and (min-width: 768px){
+        .hooper-of-week{
             background: #000000;
+
+            @media screen and (min-width: 768px){
+                background: #000000;
+                }
             }
-    }
-    
-   
+    }   
 }
